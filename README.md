@@ -47,7 +47,7 @@ This repository demonstrates automated testing skills for:
 ## Setup
 
 1. Clone the repository:
-   - git clone https://github.com/Keyek95/RYT-QAutomation.git
+   - git clone https://github.com/HisyamilRamble/RYT-QAutomation.git
    - cd RYT-QAutomation
 
 2. Install dependencies:
@@ -82,13 +82,16 @@ RYT-QAutomation/
 │ ├── 002_products.ts
 │ ├── 003_carts.ts
 │ └── 004_checkout.ts
+│
 ├── tests/    # Test scripts
 │ ├── 01_UI_Module/    # Test scripts for UI Module
 │ │ ├── TS001_login.spec.ts
 │ │ ├── TS002_products.spec.ts
 │ │ └── TS003_checkout.spec.ts
+│ │
 │ └── 02_API_Module/   # Test scripts for API Module
 │   └── TS004_api.spec.ts
+│
 ├── test-results/   # Playwright test results (screenshots, videos)
 ├── Test-Report/   # HTML reports
 ├── node_modules/   # Project dependencies
@@ -102,12 +105,12 @@ RYT-QAutomation/
 ## Test Reports
 
 Playwright generates reports at Test-Report/index.html
-Console output can also be captured via --reporter=list or --reporter=html
+Screenshots for the API result (console output) can be found at test-results/
 
 --------------------------------------------------------------------------------
 
 ## Notes
 
-API tests use JSONPlaceholder as the test backend. Responses are not persisted, so GET after POST may return empty results.
+API tests use JSONPlaceholder as the test backend. Responses are not persisted, so GET after POST may return empty/failed results.
 UI tests use stable selectors and assertions to ensure maintainable tests.
 Designed with scalability in mind: Page Object Model and reusable helper methods.
